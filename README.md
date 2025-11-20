@@ -17,6 +17,8 @@ Utilizar módulos Go e dependências externas
 
 Aprender como executar, testar e documentar uma API simples
 
+<br><br>
+
 🛠️ Tecnologias Utilizadas
 
 Golang 1.x
@@ -91,16 +93,10 @@ go test ./...
 
 🔮 Próximos Passos / Roadmap
 
- Implementar autenticação JWT
-
- Criar conexão com banco de dados real
-
- Melhorar tratamento de erros
-
- Adicionar testes automatizados
-
- Containerizar com Docker
-
+ 1. Implementar Testes unitários
+ 2. Adicionar testes automatizados
+ 3. Implementar autenticação bearer token
+ 4. Melhorar tratamento de erros
 
 <br><br>
 
