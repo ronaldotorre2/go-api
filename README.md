@@ -1,87 +1,87 @@
-#Api Golang
+# Api Golang
 <br>
 📘 Meu Primeiro Projeto de API em Golamg
 
 Este repositório contém meu primeiro projeto de estudo desenvolvendo uma API em Golang (Go). O objetivo principal é aprender os conceitos fundamentais da linguagem, boas práticas de desenvolvimento backend e estruturação de uma API REST.
 <br><br>
 
-🚀 Objetivo do Projeto
-
-Aprender a criar uma API utilizando Golang
-
-Entender rotas, handlers e responses
-
-Praticar organização de código e padrões como controllers, services e models
-
+🚀 Objetivo do Projeto<br>
+Aprender a criar uma API utilizando Golang <br>
+Entender rotas, handlers e responses <br>
+Praticar organização de código e padrões como controllers, repository, usecase e models <br>
 Utilizar módulos Go e dependências externas
+<br>
+Aprender como executar e documentar uma API simples.
 
-Aprender como executar, testar e documentar uma API simples
+<br>
 
-<br><br>
+🛠️ Tecnologias Utilizadas <br>
+Golang 1.x <br>
+Gin / net/http <br>
+Go Modules <br>
+JSON para comunicação <br>
 
-🛠️ Tecnologias Utilizadas
-
-Golang 1.x
-
-Gin / Fiber / net/http (coloque aqui o framework utilizado)
-
-Go Modules
-
-JSON para comunicação
-
-(Opcional) Banco de dados: SQLite, PostgreSQL, MongoDB
-
-(Opcional) Docker
+Banco de dado <br>
+(Opcional) SQLite, PostgreSQL, MongoDB <br>
+(Opcional) Docker <br>
 
 Nesse projeto utilizei o docoker e docker compose para colocar o postgresql em container e a api rondando.
 
+<br><br>
 
-📂 Estrutura do Projeto (Exemplo)
+📂 Estrutura do Projeto (Exemplo) <br>
+
 /project<br>
 │── cmd/<br>
 │   └── main.go<br>
-│── internal/<br>
-│   ├── controllers/<br>
-│   ├── services/<br>
-│   ├── models/<br>
-│   └── routes/<br>
+│── db/<br>
+│   ├── conn.go<br>
+│── controller/<br>
+│   ├── productControler.go<br>
+│── model/<br>
+│   ├── productModel.go<br>
+│   ├── responseModel.go<br>
+│── repository/<br>
+│   ├── productRepo.go<br>
+│── usecase/<br>
+│   ├── productUseCase.go<br>
 │── go.mod<br>
 │── go.sum<br>
 └── README.md
 
 <br><br>
 
-▶️ Como Executar o Projeto
+▶️ Como Executar o Projeto <br>
+Instale o Go em sua máquina https://go.dev/dl/
 
-Instale o Go em sua máquina
-https://go.dev/dl/
-
-Clone o repositório:
-
+Clone o repositório: 
+````
 git clone https://github.com/seu-usuario/seu-repo.git
-
+````
 
 Acesse o diretório:
-
+````
 cd seu-repo
-
+````
 
 Baixe as dependências:
-
+```
 go mod tidy
-
+```
 
 Execute o servidor:
-
+````
 go run cmd/main.go
+````
 
-<br><br>
+<br>
 
 📌 Rotas da API (Exemplo)
-Método	Rota	Descrição
-GET	 /ping	    Testa se a API está ativa
-GET	 /products	Lista usuários
-POST /product	Cria um novo produto
+
+Método	Rota	Descrição <br>
+GET	 /ping	         Testa se a API está ativa<br>
+GET	 /products	     Lista usuários<br>
+POST /product	     Cria um novo produto
 
 <br><br>
 
@@ -90,6 +90,8 @@ POST /product	Cria um novo produto
 Caso você utilize testes:
 
 go test ./...
+
+<br>
 
 🔮 Próximos Passos / Roadmap
 
@@ -102,15 +104,16 @@ go test ./...
 
 📖 Aprendizados
 
-Esse projeto marca o início da minha jornada com Go.
+Esse projeto marca o início da minha jornada com Golang.
+
 Aqui aprendi sobre:
+<li>Servidor http</li>
+<li>Manipulação de JSON</li>
+<li>Organização de projeto</li>
+<li>Módulos e dependências</li>
+<li>Boas práticas de API REST</li>
 
-Servidores HTTP
+<br><br>
 
-Manipulação de JSON
-
-Organização de projeto
-
-Módulos e dependências
-
-Boas práticas de API REST
+Ronaldo Torre <br>
+Senior Software Engineer - 2025
