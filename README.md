@@ -3,6 +3,7 @@
 📘 Meu Primeiro Projeto de API em Golamg
 
 Este repositório contém meu primeiro projeto de estudo desenvolvendo uma API em Golang (Go). O objetivo principal é aprender os conceitos fundamentais da linguagem, boas práticas de desenvolvimento backend e estruturação de uma API REST.
+<br><br>
 
 🚀 Objetivo do Projeto
 
@@ -30,6 +31,9 @@ JSON para comunicação
 
 (Opcional) Docker
 
+Nesse projeto utilizei o docoker e docker compose para colocar o postgresql em container e a api rondando.
+
+
 📂 Estrutura do Projeto (Exemplo)
 /project<br>
 │── cmd/<br>
@@ -42,6 +46,8 @@ JSON para comunicação
 │── go.mod<br>
 │── go.sum<br>
 └── README.md
+
+<br><br>
 
 ▶️ Como Executar o Projeto
 
@@ -67,11 +73,16 @@ Execute o servidor:
 
 go run cmd/main.go
 
+<br><br>
+
 📌 Rotas da API (Exemplo)
 Método	Rota	Descrição
-GET	/ping	Testa se a API está ativa
-GET	/users	Lista usuários
-POST	/users	Cria um novo usuário
+GET	 /ping	    Testa se a API está ativa
+GET	 /products	Lista usuários
+POST /product	Cria um novo produto
+
+<br><br>
+
 🧪 Testes
 
 Caso você utilize testes:
@@ -89,6 +100,9 @@ go test ./...
  Adicionar testes automatizados
 
  Containerizar com Docker
+
+
+<br><br>
 
 📖 Aprendizados
 
